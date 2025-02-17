@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  background: url(../../../assets/FondoError.png) no-repeat center fixed;
+  color: white;
+  background-size: cover;
+}
+
+.container img {
+  max-width: 100%; /* Esto asegura que la imagen no se desborde */
+  height: auto;
+  margin-top: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.container-error-img {
+    animation: pulse 2s ease-out; /* Opcional: animación de movimiento */
+    animation-iteration-count: infinite;
+}
+.container-error-text {
+    animation: pulse 2s ease-out; /* Opcional: animación de movimiento */
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }

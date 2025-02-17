@@ -1,0 +1,135 @@
+/* https://fonts.google.com/specimen/Mystery+Quest */
+.fondo {
+  background-image: url("../../assets/fondo.png");
+  background-size: cover; /* Ajusta la imagen para cubrir toda el área */
+  background-position: center;
+  height: 100vh; /* Altura completa de la ventana */
+  background-position: top;
+}
+
+.contaner-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+audio {
+  display: none;
+}
+
+.logo {
+  width: 500px;
+  position: fixed;
+  top: 10rem;
+}
+
+/* Clase para la nube */
+.nube {
+  position: fixed; /* Fija la nube en la pantalla */
+  bottom: -200px; /* Ajusta la distancia desde la parte superior */
+  left: -150px; /* Ajusta la distancia desde la parte izquierda */
+  z-index: 0; /* Asegura que la nube esté encima del logo */
+  width: 700px; /* Ajusta el tamaño de la nube */
+  height: auto; /* Mantiene la relación de aspecto de la nube */
+  animation: fadeInUp 2s ease-out; /* Opcional: animación de movimiento */
+  animation-delay: 1s;
+}
+
+.nube2 {
+  position: fixed; /* Fija la nube en la pantalla */
+  bottom: -200px; /* Ajusta la distancia desde la parte superior */
+  right: -150px; /* Ajusta la distancia desde la parte izquierda */
+  z-index: 0; /* Asegura que la nube esté encima del logo */
+  width: 700px; /* Ajusta el tamaño de la nube */
+  height: auto; /* Mantiene la relación de aspecto de la nube */
+  animation: fadeInUp 2s ease-out; /* Opcional: animación de movimiento */
+  animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo {
+  animation: fadeInUp 4s ease-out;
+  /* Opcional: Añadir retraso para que la animación no empiece inmediatamente */
+  animation-delay: 1s;
+}
+
+.audio-controls {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.audio-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.audio-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+
+.audio-button:focus {
+  outline: none;
+}
+
+.audio-icon {
+  width: 30px; /* Tamaño del ícono */
+  height: auto;
+  border-radius: 1rem;
+}
+
+.star-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star-button {
+  position: fixed;
+  top: 450px;
+  font-size: 50px;
+  background: transparent;
+  border: none;
+  color: white;
+  letter-spacing: 4px;
+  z-index: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+  animation: fadeInUp 2s ease-out;
+  animation-delay: 1s;
+}
+
+.star-button:hover {
+  cursor: url(../../assets/seta.png), auto;
+  color: black;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 80px white,
+    0 0 120px white, 0 0 160px white;
+  &:nth-child(1) {
+    margin-bottom: 10px;
+    &::after {
+      content: "";
+    }
+  }
+  &:nth-child(2) {
+    margin-top: 10px;
+  }
+}
