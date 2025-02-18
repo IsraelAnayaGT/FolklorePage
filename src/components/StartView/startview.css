@@ -113,9 +113,9 @@
 /* En pantallas más pequeñas (móviles en modo retrato) */
 @media (max-width: 480px) {
   /* Cambiar el grid a una sola columna */
-  .container__content {
+  /* .container__content {
     grid-template-columns: auto;
-  }
+  } */
 
   /* Reducir más el tamaño de la imagen de los "folks" */
   .folk-image {
