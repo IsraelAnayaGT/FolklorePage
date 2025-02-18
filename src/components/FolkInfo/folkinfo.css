@@ -19,7 +19,6 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 100%;
     animation: fadeInUp 2s ease-out; /* Opcional: animación de movimiento */
 }
 
@@ -90,3 +89,67 @@
       transform: scale(0.9);
     }
   }
+
+  /* Media Queries para mejorar la responsividad */
+
+/* En pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .folk-info-container {
+    flex-direction: column; /* Cambiar de fila a columna */
+    background-position: center;
+  }
+
+  /* Ajustar el texto y la imagen */
+  .folk-info-text {
+    width: 90%; /* Usar más espacio en pantallas pequeñas */
+    text-align: center; /* Alinear el texto al centro */
+  }
+
+  .folk-info-title {
+    font-size: 4vw; /* Ajustar el tamaño del título */
+  }
+
+  .folk-info-description {
+    font-size: 1rem; /* Reducir el tamaño de la descripción */
+    padding: 15px; /* Aumentar el padding */
+  }
+
+  .folk-atras {
+    font-size: 1.2rem; /* Reducir el tamaño de la fuente del botón */
+    padding: 8px 12px; /* Ajustar el padding */
+  }
+
+  /* Imagen del folk */
+  .folk-imagen {
+    width: 50%; /* Reducir el tamaño de la imagen */
+  }
+}
+
+/* En pantallas más pequeñas (móviles en modo retrato) */
+@media (max-width: 480px) {
+  .folk-info-container {
+    padding: 20px; /* Añadir padding para evitar que se toque el borde */
+  }
+
+  .folk-info-text {
+    width: 100%; /* Asegurar que ocupe todo el ancho */
+  }
+
+  .folk-info-title {
+    font-size: 5vw; /* Ajustar aún más el tamaño del título */
+  }
+
+  .folk-info-description {
+    font-size: 0.9rem; /* Reducir el tamaño del texto aún más */
+    padding: 10px; /* Reducir el padding */
+  }
+
+  .folk-atras {
+    font-size: 1rem; /* Reducir el tamaño de la fuente del botón */
+    padding: 5px 10px; /* Reducir el padding */
+  }
+
+  .folk-imagen {
+    width: 25%; /* Reducir aún más el tamaño de la imagen */
+  }
+}

@@ -133,3 +133,42 @@ audio {
     margin-top: 10px;
   }
 }
+
+
+/* Media Queries para mayor responsividad */
+@media (max-width: 768px) {
+  /* En pantallas pequeñas, ajustar el logo */
+  .logo {
+    width: 60vw;
+    top: 5rem; /* Ajustar la posición del logo */
+  }
+
+  /* Hacer que las nubes ocupen más espacio */
+  .nube, .nube2 {
+    width: 80vw;
+  }
+
+  /* Botón de estrellas más pequeño */
+  .star-button {
+    font-size: 8vw;
+    top: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* En pantallas muy pequeñas, reducir más los elementos */
+  .logo {
+    width: 80vw;
+    top: 3rem;
+  }
+
+  .star-button {
+    font-size: 10vw;
+    top: 250px;
+  }
+
+  /* Ajustar nubes */
+  .nube, .nube2 {
+    width: 90vw;
+  }
+}

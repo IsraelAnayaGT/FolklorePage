@@ -86,3 +86,49 @@
   align-items: center;
   padding-top: 1rem;
 }
+
+
+/* En pantallas pequeñas (móviles), ajustar la estructura */
+@media (max-width: 768px) {
+  /* Cambiar el grid de 7 columnas a 2 columnas */
+  .container__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Ajustar el tamaño del contenedor principal */
+  .container__main {
+    background-size: cover;
+  }
+
+  /* Ajustar el tamaño de la imagen de los "folks" */
+  .folk-image {
+    width: 80px; /* Reducir el tamaño de la imagen */
+  }
+
+  .item p {
+    font-size: 1.2rem; /* Reducir el tamaño del texto */
+  }
+}
+
+/* En pantallas más pequeñas (móviles en modo retrato) */
+@media (max-width: 480px) {
+  /* Cambiar el grid a una sola columna */
+  .container__content {
+    grid-template-columns: 1fr;
+  }
+
+  /* Reducir más el tamaño de la imagen de los "folks" */
+  .folk-image {
+    width: 60px; /* Asegurar que la imagen sea aún más pequeña */
+  }
+
+  /* Reducir más el tamaño del texto */
+  .item p {
+    font-size: 1rem; /* Font-size más pequeño */
+  }
+
+  /* Ajustar el contenedor principal */
+  .container__main {
+    background-size: cover;
+  }
+}
