@@ -18,6 +18,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     width: 50%;
     animation: fadeInUp 2s ease-out; /* Opcional: animación de movimiento */
 }
@@ -127,9 +128,6 @@
 
 /* En pantallas más pequeñas (móviles en modo retrato) */
 @media (max-width: 480px) {
-  .folk-info-container {
-    padding: 20px; /* Añadir padding para evitar que se toque el borde */
-  }
 
   .folk-info-text {
     width: 100%; /* Asegurar que ocupe todo el ancho */
@@ -150,6 +148,6 @@
   }
 
   .folk-imagen {
-    width: 25%; /* Reducir aún más el tamaño de la imagen */
+    width: 35%; /* Reducir aún más el tamaño de la imagen */
   }
 }

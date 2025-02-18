@@ -145,7 +145,7 @@ audio {
 
   /* Hacer que las nubes ocupen más espacio */
   .nube, .nube2 {
-    width: 80vw;
+    width: 600px;
   }
 
   /* Botón de estrellas más pequeño */
@@ -169,6 +169,6 @@ audio {
 
   /* Ajustar nubes */
   .nube, .nube2 {
-    width: 90vw;
+    width: 500px;
   }
 }

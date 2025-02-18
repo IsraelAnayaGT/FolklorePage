@@ -114,7 +114,7 @@
 @media (max-width: 480px) {
   /* Cambiar el grid a una sola columna */
   .container__content {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
   }
 
   /* Reducir más el tamaño de la imagen de los "folks" */
