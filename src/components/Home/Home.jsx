@@ -65,7 +65,7 @@ export default function Home() {
           </button>
         </div>
         <div className="star-button-container">
-          <Link to="/Menu" className="star-button">Start</Link>
+          <Link to="/Home" className="star-button">Start</Link>
         </div>
       </div>
 
